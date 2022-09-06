@@ -212,23 +212,24 @@ namespace eTickets.Data
                 // Actors & Movies
                 if (!context.Actors_Movies.Any())
                 {
-                    context.Actors_Movies.AddRange(new List<Actor_Movie> (){
+                    context.Actors_Movies.AddRange(new List<Actor_Movie>()
+                    {
                         new Actor_Movie()
                         {
                             ActorId = 1,
                             MovieId = 1
                         },
-                            new Actor_Movie()
+                        new Actor_Movie()
                             {
                                 ActorId = 3,
                                 MovieId = 1
                             },
-                                new Actor_Movie()
-                                {
+                        new Actor_Movie()
+                        {
                                     ActorId = 1,
                                     MovieId = 2
-                                },
-                                new Actor_Movie()
+                        },
+                        new Actor_Movie()
                         {
                             ActorId = 4,
                             MovieId = 2
@@ -283,26 +284,26 @@ namespace eTickets.Data
                             ActorId = 5,
                             MovieId = 5
                         },
-                            new Actor_Movie()
-                            {
+                        new Actor_Movie()
+                        {
                                 ActorId = 3,
                                 MovieId = 6
-                            },
-                                new Actor_Movie()
-                                {
+                        },
+                        new Actor_Movie()
+                        {
                                     ActorId = 4,
                                     MovieId = 6
-                                },
-                                    new Actor_Movie()
-                                    {
+                        },
+                        new Actor_Movie()
+                        {
                                         ActorId = 5,
                                         MovieId = 6
-                                    },
-                                        new Actor_Movie()
-                                        {
+                        },
+                        new Actor_Movie()
+                        {
                                             ActorId = 5,
                                             MovieId = 6
-                                        }
+                        }
                     });
                     context.SaveChanges();
                 }
