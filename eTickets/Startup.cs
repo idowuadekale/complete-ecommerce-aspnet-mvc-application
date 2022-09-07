@@ -59,7 +59,7 @@ namespace eTickets
             });
 
             // Seed Database
-            //AppDbInitializer.Seed(app);
+            AppDbInitializer.Seed(app);
         }
     }
 }
